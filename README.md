@@ -4,6 +4,7 @@ Project for DV Hacks: AI Hackathon
 
 *Overview:*
 - MLImageClassifierBuilder
+- Data from International Skin Imaging Collaboration
 
 *Key Technologies:*
 - CoreML

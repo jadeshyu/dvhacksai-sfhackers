@@ -75,21 +75,20 @@ class MainVC: UIViewController {
             if classifications.isEmpty {
                 self.classificationLabel.text = "Nothing recognized."
             } else {
-                
-                let topClassifications = classifications.prefix(2)
-                let classification = topClassifications[1]
-                let description = String(format: "%.1f%% %@", classification.confidence * 100, classification.identifier)
-                
-                let _ = topClassifications.map { classification -> String in
-                    self.lvl = Double(classification.confidence)
+              
+                let topClassifications = classifications.prefix(1)
+                let descriptions = topClassifications.map { classification -> String in
+                    if classification.identifier != "benign" {
+                        self.lvl = Double(classification.confidence)
+                    }
                     return String(format: "%.1f%% %@", classification.confidence * 100, classification.identifier)
                 }
-                self.classificationLabel.text = "(" + description + ")"
+                self.classificationLabel.text = "(" + descriptions.joined(separator: " ") + ")"
                 self.riskView.isHidden = false
                 
                 if self.lvl >= 0.7 {
                     self.riskImg.image = UIImage(named: "icn-risk-hi")
-                    self.riskLbl.text = "High risk risk"
+                    self.riskLbl.text = "High risk"
                 } else if self.lvl >= 0.3 {
                     self.riskImg.image = UIImage(named: "icn-risk-med")
                     self.riskLbl.text = "Medium risk"
