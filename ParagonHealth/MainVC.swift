@@ -80,6 +80,8 @@ class MainVC: UIViewController {
                 let descriptions = topClassifications.map { classification -> String in
                     if classification.identifier != "benign" {
                         self.lvl = Double(classification.confidence)
+                    } else {
+                        self.lvl = 0.0
                     }
                     return String(format: "%.1f%% %@", classification.confidence * 100, classification.identifier)
                 }
