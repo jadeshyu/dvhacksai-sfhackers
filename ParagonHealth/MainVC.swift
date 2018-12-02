@@ -93,10 +93,9 @@ class MainVC: UIViewController {
                     self.riskImg.image = UIImage(named: "icn-risk-med")
                     self.riskLbl.text = "Medium risk"
                 } else {
-                    
+                    self.riskImg.image = UIImage(named: "icn-risk-low")
+                    self.riskLbl.text = "Low risk"
                 }
-                self.cameraButton.isHidden = true
-                self.imageCmr.isHidden = true
             }
         }
     }
