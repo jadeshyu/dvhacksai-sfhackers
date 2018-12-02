@@ -75,13 +75,16 @@ class MainVC: UIViewController {
             if classifications.isEmpty {
                 self.classificationLabel.text = "Nothing recognized."
             } else {
-                // Display top classifications ranked by confidence in the UI.
+                
                 let topClassifications = classifications.prefix(2)
-                let descriptions = topClassifications.map { classification -> String in
+                let classification = topClassifications[1]
+                let description = String(format: "%.1f%% %@", classification.confidence * 100, classification.identifier)
+                
+                let _ = topClassifications.map { classification -> String in
                     self.lvl = Double(classification.confidence)
                     return String(format: "%.1f%% %@", classification.confidence * 100, classification.identifier)
                 }
-                self.classificationLabel.text = "(" + descriptions.joined(separator: " ") + ")"
+                self.classificationLabel.text = "(" + description + ")"
                 self.riskView.isHidden = false
                 
                 if self.lvl >= 0.7 {
