@@ -78,5 +78,7 @@ Accuracy: 88.50%
 ## Steps to Build and Test:
 1. Download repo
 2. Run the project in Xcode
-3. Drag and Drop images from the test folder to simulator Photos 
+3. Drag and Drop images from the test folder to simulator Photos<br> 
+      3.1 EXTRA(Real device): Connect your iPhone and run the project. Ensure a valid provisioning profile is selected.
+5. Test time
 
