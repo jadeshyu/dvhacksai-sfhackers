@@ -3,6 +3,9 @@ Project for DV Hacks: AI Hackathon
 
 
 ## Overview:
+1. Serve as a platform to augment research trial screening, data collection for clinical trials. 
+2. Utilize machine learning techniques to help researchers determine the key variables affecting outcomes to create new research.
+3. Give researchers access to repository of anonymized data from millions of users to determine new research opportunities to generate breakthrough cures, regiments, and control our biology.
 
 ## Key Technologies:
 - CoreML(CNN, MLImageClassifierBuilder)
@@ -12,6 +15,7 @@ Project for DV Hacks: AI Hackathon
 
 - Log output:
 
+```
 Extracting image features from full data set.
 Analyzing and extracting image features.
 +------------------+--------------+------------------+
@@ -69,7 +73,7 @@ Analyzing and extracting image features.
 Number of examples: 80
 Number of classes: 2
 Accuracy: 88.50%
-
+```
 
 ## Steps to Build and Test:
 1. Download repo
