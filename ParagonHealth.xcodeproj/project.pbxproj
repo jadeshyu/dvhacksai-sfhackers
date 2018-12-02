@@ -13,7 +13,7 @@
 		279B743B21B3732F004BF90D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279B743A21B3732F004BF90D /* Assets.xcassets */; };
 		279B743E21B3732F004BF90D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279B743C21B3732F004BF90D /* LaunchScreen.storyboard */; };
 		279B744821B37604004BF90D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B744721B37604004BF90D /* Extensions.swift */; };
-		279B744A21B381BB004BF90D /* Model1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 279B744921B381BB004BF90D /* Model1.mlmodel */; };
+		279B745521B394AC004BF90D /* Model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 279B745421B394AC004BF90D /* Model.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +25,8 @@
 		279B743D21B3732F004BF90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		279B743F21B3732F004BF90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		279B744721B37604004BF90D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		279B744921B381BB004BF90D /* Model1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Model1.mlmodel; sourceTree = "<group>"; };
-		279B744F21B3850F004BF90D /* PetsClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PetsClassifier.mlmodel; sourceTree = "<group>"; };
 		279B745021B38510004BF90D /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
-		279B745121B38510004BF90D /* Model1-CNNScratch.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Model1-CNNScratch.mlmodel"; sourceTree = "<group>"; };
+		279B745421B394AC004BF90D /* Model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Model.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				279B743521B3732C004BF90D /* MainVC.swift */,
-				279B744921B381BB004BF90D /* Model1.mlmodel */,
+				279B745421B394AC004BF90D /* Model.mlmodel */,
 				279B744621B3747E004BF90D /* Support */,
 				279B744521B37477004BF90D /* Base */,
 				279B743F21B3732F004BF90D /* Info.plist */,
@@ -84,9 +82,7 @@
 		279B744621B3747E004BF90D /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				279B744F21B3850F004BF90D /* PetsClassifier.mlmodel */,
 				279B745021B38510004BF90D /* MobileNet.mlmodel */,
-				279B745121B38510004BF90D /* Model1-CNNScratch.mlmodel */,
 				279B744721B37604004BF90D /* Extensions.swift */,
 			);
 			path = Support;
@@ -163,8 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279B744A21B381BB004BF90D /* Model1.mlmodel in Sources */,
 				279B743621B3732C004BF90D /* MainVC.swift in Sources */,
+				279B745521B394AC004BF90D /* Model.mlmodel in Sources */,
 				279B744821B37604004BF90D /* Extensions.swift in Sources */,
 				279B743421B3732C004BF90D /* AppDelegate.swift in Sources */,
 			);
